@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Download SpeechWave - Text to Speech Application</title>
-  <meta name="description" content="Download SpeechWave - The premium text-to-speech application for all your devices. Available for Android, Windows, MacOS, and iOS.">
+  <meta name="description"
+    content="Download SpeechWave - The premium text-to-speech application for all your devices. Available for Android, Windows, MacOS, and iOS.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <style>
     :root {
       --primary-black: #121212;
@@ -24,13 +27,13 @@
       --shadow-color: rgba(0, 0, 0, 0.3);
       --success-color: #4CAF50;
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
@@ -38,14 +41,15 @@
       min-height: 100vh;
       line-height: 1.6;
     }
-    
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
     }
+
     .navbar {
-        background-color:#f7f7f7;
+      background-color: #f7f7f7;
       width: 100%;
       padding: 18px 0;
       box-sizing: border-box;
@@ -262,6 +266,7 @@
         margin-top: 5px;
       }
     }
+
     /* Header Styles */
     .dl-header {
       width: 100%;
@@ -271,7 +276,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .dl-header::before {
       content: "";
       position: absolute;
@@ -282,12 +287,12 @@
       background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.03)"/></svg>');
       background-size: cover;
     }
-    
+
     .dl-header-content {
       position: relative;
       z-index: 1;
     }
-    
+
     .dl-header-icon {
       display: inline-flex;
       align-items: center;
@@ -300,12 +305,12 @@
       box-shadow: 0 4px 20px var(--shadow-color);
       border: 1px solid var(--border-color);
     }
-    
+
     .dl-header-icon i {
       font-size: 36px;
       color: var(--primary-white);
     }
-    
+
     .dl-header-title {
       font-size: 42px;
       font-weight: 800;
@@ -316,7 +321,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    
+
     .dl-header-desc {
       font-size: 18px;
       color: var(--text-secondary);
@@ -327,13 +332,13 @@
       margin-right: auto;
       font-weight: 400;
     }
-    
+
     /* Features Section */
     .features-section {
       padding: 60px 0;
       background: var(--secondary-black);
     }
-    
+
     .section-title {
       text-align: center;
       font-size: 32px;
@@ -341,14 +346,14 @@
       margin-bottom: 50px;
       color: var(--primary-white);
     }
-    
+
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
-    
+
     .feature-card {
       background: var(--tertiary-black);
       border-radius: 12px;
@@ -357,12 +362,12 @@
       transition: transform 0.3s, box-shadow 0.3s;
       border: 1px solid var(--border-color);
     }
-    
+
     .feature-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px var(--shadow-color);
     }
-    
+
     .feature-icon {
       display: inline-flex;
       align-items: center;
@@ -373,37 +378,37 @@
       border-radius: 50%;
       margin-bottom: 20px;
     }
-    
+
     .feature-icon i {
       font-size: 28px;
       color: var(--primary-white);
     }
-    
+
     .feature-title {
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 15px;
       color: var(--primary-white);
     }
-    
+
     .feature-desc {
       font-size: 15px;
       color: var(--text-secondary);
       line-height: 1.6;
     }
-    
+
     /* Download Options */
     .dl-section {
       padding: 80px 0;
     }
-    
+
     .dl-options {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
-    
+
     .dl-card {
       background: var(--tertiary-black);
       border-radius: 16px;
@@ -419,7 +424,7 @@
       border: 1px solid var(--border-color);
       overflow: hidden;
     }
-    
+
     .dl-card::before {
       content: "";
       position: absolute;
@@ -429,13 +434,13 @@
       height: 4px;
       background: linear-gradient(to right, var(--accent-color), var(--success-color));
     }
-    
+
     .dl-card:focus,
     .dl-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 30px var(--shadow-color);
     }
-    
+
     .dl-card .dl-icon {
       display: flex;
       align-items: center;
@@ -448,46 +453,49 @@
       transition: all 0.3s;
       border: 1px solid var(--border-color);
     }
-    
+
     .dl-card:hover .dl-icon {
       background: var(--primary-black);
       transform: scale(1.05);
     }
-    
+
     .dl-card .dl-icon i {
       font-size: 36px;
       color: var(--primary-white);
       transition: color 0.3s;
     }
-    
+
     .dl-card .dl-title {
       font-size: 22px;
       font-weight: 700;
       margin-bottom: 10px;
       color: var(--primary-white);
     }
-    .dl-card.coming-soon {
-  position: relative;
-  opacity: 0.6;
-  pointer-events: none; /* prevents interaction */
-}
 
-.dl-card.coming-soon::after {
-  content: "Coming Soon";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  z-index: 10;
-}
+    .dl-card.coming-soon {
+      position: relative;
+      opacity: 0.6;
+      pointer-events: none;
+      /* prevents interaction */
+    }
+
+    .dl-card.coming-soon::after {
+      content: "Coming Soon";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* semi-transparent overlay */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      z-index: 10;
+    }
 
     .dl-card .dl-sub {
       font-size: 15px;
@@ -497,7 +505,7 @@
       min-height: 60px;
       line-height: 1.5;
     }
-    
+
     .dl-card .dl-details {
       font-size: 13px;
       color: var(--text-muted);
@@ -506,25 +514,25 @@
       width: 100%;
       padding: 0 10px;
     }
-    
+
     .dl-card .dl-details ul {
       list-style-type: none;
       padding-left: 0;
     }
-    
+
     .dl-card .dl-details li {
       margin-bottom: 8px;
       position: relative;
       padding-left: 20px;
     }
-    
+
     .dl-card .dl-details li::before {
       content: "•";
       color: var(--accent-color);
       position: absolute;
       left: 0;
     }
-    
+
     .dl-card .dl-btn {
       background: linear-gradient(to right, var(--accent-color), #2a7bc8);
       color: var(--primary-white);
@@ -543,42 +551,42 @@
       width: 90%;
       justify-content: center;
     }
-    
+
     .dl-card .dl-btn:hover {
       background: linear-gradient(to right, #2a7bc8, var(--accent-color));
       box-shadow: 0 6px 20px rgba(60, 153, 231, 0.4);
       transform: translateY(-2px);
     }
-    
+
     .dl-card .dl-btn i {
       font-size: 16px;
     }
-    
+
     /* System Requirements */
     .requirements-section {
       padding: 60px 0;
       background: var(--secondary-black);
     }
-    
+
     .requirements-container {
       max-width: 900px;
       margin: 0 auto;
     }
-    
+
     .requirements-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
-    
+
     .requirement-card {
       background: var(--tertiary-black);
       border-radius: 12px;
       padding: 25px;
       border: 1px solid var(--border-color);
     }
-    
+
     .requirement-title {
       font-size: 18px;
       font-weight: 600;
@@ -588,16 +596,16 @@
       align-items: center;
       gap: 10px;
     }
-    
+
     .requirement-title i {
       color: var(--accent-color);
     }
-    
+
     .requirement-list {
       list-style-type: none;
       padding-left: 0;
     }
-    
+
     .requirement-list li {
       margin-bottom: 10px;
       color: var(--text-secondary);
@@ -605,7 +613,7 @@
       position: relative;
       padding-left: 20px;
     }
-    
+
     .requirement-list li::before {
       content: "✓";
       color: var(--success-color);
@@ -613,24 +621,24 @@
       left: 0;
       font-weight: bold;
     }
-    
+
     /* FAQ Section */
     .faq-section {
       padding: 80px 0;
     }
-    
+
     .faq-container {
       max-width: 800px;
       margin: 0 auto;
     }
-    
+
     .faq-item {
       margin-bottom: 20px;
       border: 1px solid var(--border-color);
       border-radius: 10px;
       overflow: hidden;
     }
-    
+
     .faq-question {
       padding: 20px;
       background: var(--tertiary-black);
@@ -641,7 +649,7 @@
       font-weight: 600;
       font-size: 16px;
     }
-    
+
     .faq-answer {
       padding: 0 20px;
       max-height: 0;
@@ -649,20 +657,20 @@
       transition: max-height 0.3s, padding 0.3s;
       background: var(--secondary-black);
     }
-    
+
     .faq-item.active .faq-answer {
       padding: 20px;
       max-height: 500px;
     }
-    
+
     .faq-question i {
       transition: transform 0.3s;
     }
-    
+
     .faq-item.active .faq-question i {
       transform: rotate(180deg);
     }
-    
+
     .footer {
       width: 100%;
       background: #0a0a0a;
@@ -904,103 +912,104 @@
       background: #444;
     }
 
-    
+
     /* Responsive Styles */
     @media (max-width: 992px) {
       .dl-header-title {
         font-size: 36px;
       }
-      
+
       .section-title {
         font-size: 28px;
       }
     }
-    
+
     @media (max-width: 768px) {
       .dl-header {
         padding: 40px 0 30px;
       }
-      
+
       .dl-header-title {
         font-size: 32px;
       }
-      
+
       .dl-header-desc {
         font-size: 16px;
       }
-      
+
       .dl-header-icon {
         width: 70px;
         height: 70px;
       }
-      
+
       .dl-header-icon i {
         font-size: 30px;
       }
-      
+
       .features-section,
       .dl-section,
       .requirements-section,
       .faq-section {
         padding: 40px 0;
       }
-      
+
       .dl-card .dl-icon {
         width: 70px;
         height: 70px;
       }
-      
+
       .dl-card .dl-icon i {
         font-size: 30px;
       }
-      
+
       .dl-card .dl-title {
         font-size: 20px;
       }
     }
-    
+
     @media (max-width: 576px) {
       .dl-header-title {
         font-size: 28px;
       }
-      
+
       .dl-header-desc {
         font-size: 15px;
       }
-      
+
       .section-title {
         font-size: 24px;
       }
-      
+
       .dl-card {
         padding: 20px 15px;
       }
-      
+
       .dl-card .dl-title {
         font-size: 18px;
       }
-      
+
       .dl-card .dl-sub {
         font-size: 14px;
       }
-      
+
       .dl-card .dl-btn {
         font-size: 14px;
         padding: 10px 20px;
       }
-      
+
       .footer-links {
         gap: 20px;
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Header Section -->
-     <nav class="navbar">
+  <nav class="navbar">
     <div class="navbar-left">
       <div class="logo-box">
-       <a href="index.html"><img  src="icon.png" alt="Logo"></a>
+        <a href="index.html"><img src="icon.png" alt="Logo"></a>
       </div>
       <div class="brand">
         <span class="brand-title">SpeechWave</span>
@@ -1020,7 +1029,8 @@
       </div>
       <h1 class="dl-header-title">Download SpeechWave</h1>
       <p class="dl-header-desc">
-        Transform text into natural-sounding speech with SpeechWave. Our premium text-to-speech application is available for all major platforms with advanced features and high-quality voices.
+        Transform text into natural-sounding speech with SpeechWave. Our premium text-to-speech application is available
+        for all major platforms with advanced features and high-quality voices.
       </p>
     </div>
   </header>
@@ -1035,28 +1045,32 @@
             <i class="fa-solid fa-microphone"></i>
           </div>
           <h3 class="feature-title">Natural Voices</h3>
-          <p class="feature-desc">Experience lifelike speech with our advanced neural network technology that produces human-like intonation and rhythm.</p>
+          <p class="feature-desc">Experience lifelike speech with our advanced neural network technology that produces
+            human-like intonation and rhythm.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <i class="fa-solid fa-language"></i>
           </div>
           <h3 class="feature-title">Multiple Languages</h3>
-          <p class="feature-desc">Convert text to speech in over 50 languages and 200 different voices with regional accents and dialects.</p>
+          <p class="feature-desc">Convert text to speech in over 50 languages and 200 different voices with regional
+            accents and dialects.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <i class="fa-solid fa-gauge-high"></i>
           </div>
           <h3 class="feature-title">Fast Processing</h3>
-          <p class="feature-desc">Generate speech in real-time with our optimized processing engine, even for long documents and books.</p>
+          <p class="feature-desc">Generate speech in real-time with our optimized processing engine, even for long
+            documents and books.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <i class="fa-solid fa-sliders"></i>
           </div>
           <h3 class="feature-title">Customizable</h3>
-          <p class="feature-desc">Adjust speech rate, pitch, and volume to create the perfect audio output for your needs.</p>
+          <p class="feature-desc">Adjust speech rate, pitch, and volume to create the perfect audio output for your
+            needs.</p>
         </div>
       </div>
     </div>
@@ -1079,52 +1093,56 @@
               <li>Offline functionality</li>
             </ul>
           </div>
-          <button class="dl-btn"><i class="fa-solid fa-download"></i> Download APK</button>
+          <button class="dl-btn"
+            onclick="window.location.href='https://play.google.com/store/apps/details?id=com.omneuro.ai.tts.speechwave'">
+            <i class="fa-solid fa-download"></i> Download APK
+          </button>
+
         </div>
-     <div class="dl-card coming-soon" tabindex="0">
-  <div class="dl-icon"><i class="fa-brands fa-windows"></i></div>
-  <div class="dl-title">Windows</div>
-  <div class="dl-sub">Install on Windows 10, 11, and later versions.</div>
-  <div class="dl-details">
-    <ul>
-      <li>Windows 10 or later</li>
-      <li>4GB RAM minimum</li>
-      <li>500MB free storage</li>
-      <li>.NET Framework 4.8</li>
-    </ul>
-  </div>
-  <button class="dl-btn" disabled><i class="fa-solid fa-download"></i> Coming Soon</button>
-</div>
+        <div class="dl-card coming-soon" tabindex="0">
+          <div class="dl-icon"><i class="fa-brands fa-windows"></i></div>
+          <div class="dl-title">Windows</div>
+          <div class="dl-sub">Install on Windows 10, 11, and later versions.</div>
+          <div class="dl-details">
+            <ul>
+              <li>Windows 10 or later</li>
+              <li>4GB RAM minimum</li>
+              <li>500MB free storage</li>
+              <li>.NET Framework 4.8</li>
+            </ul>
+          </div>
+          <button class="dl-btn" disabled><i class="fa-solid fa-download"></i> Coming Soon</button>
+        </div>
 
-<div class="dl-card coming-soon" tabindex="0">
-  <div class="dl-icon"><i class="fa-brands fa-apple"></i></div>
-  <div class="dl-title">MacOS</div>
-  <div class="dl-sub">Mac app optimized for M-series and Intel processors.</div>
-  <div class="dl-details">
-    <ul>
-      <li>macOS 11.0 or later</li>
-      <li>Apple Silicon or Intel</li>
-      <li>400MB free storage</li>
-      <li>Dark mode support</li>
-    </ul>
-  </div>
-  <button class="dl-btn" disabled><i class="fa-solid fa-download"></i> Coming Soon</button>
-</div>
+        <div class="dl-card coming-soon" tabindex="0">
+          <div class="dl-icon"><i class="fa-brands fa-apple"></i></div>
+          <div class="dl-title">MacOS</div>
+          <div class="dl-sub">Mac app optimized for M-series and Intel processors.</div>
+          <div class="dl-details">
+            <ul>
+              <li>macOS 11.0 or later</li>
+              <li>Apple Silicon or Intel</li>
+              <li>400MB free storage</li>
+              <li>Dark mode support</li>
+            </ul>
+          </div>
+          <button class="dl-btn" disabled><i class="fa-solid fa-download"></i> Coming Soon</button>
+        </div>
 
-<div class="dl-card coming-soon" tabindex="0">
-  <div class="dl-icon"><i class="fa-brands fa-apple"></i></div>
-  <div class="dl-title">iOS</div>
-  <div class="dl-sub">SpeechWave for iPhone, iPad, and iPod Touch.</div>
-  <div class="dl-details">
-    <ul>
-      <li>iOS 14.0 or later</li>
-      <li>iPhone, iPad, iPod Touch</li>
-      <li>150MB free storage</li>
-      <li>iCloud sync</li>
-    </ul>
-  </div>
-  <button class="dl-btn" disabled><i class="fa-solid fa-download"></i> Coming Soon</button>
-</div>
+        <div class="dl-card coming-soon" tabindex="0">
+          <div class="dl-icon"><i class="fa-brands fa-apple"></i></div>
+          <div class="dl-title">iOS</div>
+          <div class="dl-sub">SpeechWave for iPhone, iPad, and iPod Touch.</div>
+          <div class="dl-details">
+            <ul>
+              <li>iOS 14.0 or later</li>
+              <li>iPhone, iPad, iPod Touch</li>
+              <li>150MB free storage</li>
+              <li>iCloud sync</li>
+            </ul>
+          </div>
+          <button class="dl-btn" disabled><i class="fa-solid fa-download"></i> Coming Soon</button>
+        </div>
 
       </div>
     </div>
@@ -1223,7 +1241,7 @@
   </section> -->
 
   <!-- Footer -->
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-content">
       <div class="footer-brand">
         <div class="footer-logo-row">
@@ -1278,7 +1296,6 @@
       button.addEventListener('click', (e) => {
         e.stopPropagation();
         const platform = button.closest('.dl-card').querySelector('.dl-title').textContent;
-        alert(`In a real implementation, this would download SpeechWave for ${platform}`);
       });
     });
 
@@ -1291,4 +1308,5 @@
     });
   </script>
 </body>
+
 </html>
