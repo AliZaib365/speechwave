@@ -2,242 +2,502 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SpeechWave Footer Navbar Exact Clone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome SVG CDN for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Modern Features Section</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'sans-serif', Arial, Helvetica;
-      background: #0a0a0a;
-      color: #fff;
-    }
-    .footer-navbar {
-      width: 100vw;
-      background: #0a0a0a;
-      padding-top: 36px;
-      box-sizing: border-box;
-    }
-    .footer-content {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
-      gap: 180px;
-    }
-    .footer-brand {
-      margin-left: 400px;
-      min-width: 320px;
-      max-width: 360px;
-      display: flex;
-      flex-direction: column;
-    }
-    .footer-logo-row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 14px;
-    }
-    .footer-logo-box {
-      background: #fff;
-      border-radius: 7px;
-      width: 27px;
-      height: 27px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 14px;
+    .features-section {
+      width: 100%;
+      padding: 100px 0;
+      background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
+      text-align: center;
+      position: relative;
       overflow: hidden;
     }
-    .footer-logo-box img {
-      width: 17px;
-      height: 17px;
-      display: block;
-    }
-    .footer-brand-title {
-      font-size: 22px;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: 0.02em;
-    }
-    .footer-brand-desc {
-      font-size: 15px;
-      color: #e2e2e2;
-      margin-top: 0;
-      line-height: 1.3;
-      font-weight: 400;
-      letter-spacing: 0.01em;
-    }
-    .footer-legal {
-      min-width: 180px;
-      margin-top: 14px;
-    }
-    .footer-legal-title {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 7px;
-      color: #fff;
-      letter-spacing: 0.01em;
-    }
-    .footer-legal-link {
-      font-size: 15px;
-      color: #e2e2e2;
-      text-decoration: none;
-      margin-bottom: 8px;
-      transition: color 0.16s;
-      display: inline-block;
-      letter-spacing: 0.01em;
-    }
-    .footer-legal-link:hover {
-      color: #fff;
-    }
-    .footer-divider {
-      width: 1150px;
-      max-width: 90vw;
-      height: 1px;
-      background: #232323;
-      margin: 38px auto 0 auto;
-      border: none;
-      display: block;
-    }
-    .footer-bottom-row {
+
+    .features-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236a11cb' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    .features-badge {
+      display: inline-block;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .features-badge-inner {
+      display: inline-block;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 24px;
+      border-radius: 50px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(106, 17, 203, 0.2);
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .features-badge-inner::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .features-badge:hover .features-badge-inner::after {
+      left: 100%;
+    }
+
+    .section-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: #1a1a1a;
+      margin: 0 0 20px 0;
+      letter-spacing: -1.5px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-title .highlight {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-desc {
+      font-size: 20px;
+      color: #6b7280;
+      max-width: 700px;
+      margin: 0 auto 60px auto;
+      line-height: 1.6;
+      font-weight: 400;
+      position: relative;
+      z-index: 1;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
       max-width: 1200px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       margin: 0 auto;
-      padding-top: 16px;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
     }
-    .footer-copyright {
-      color: #b7b7b7;
-      font-size: 15px;
-      margin-left: 400px;
-      letter-spacing: 0.01em;
-    }
-    .footer-social {
+
+    .feature-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       display: flex;
-      gap: 14px;
-      margin-right: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 30px 30px 30px;
+      box-sizing: border-box;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      overflow: hidden;
+      text-align: left;
     }
-    .footer-social-icon {
-      background: #555;
-      border-radius: 7px;
-      width: 32px;
-      height: 32px;
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .feature-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
-      font-size: 17px;
-      transition: background 0.18s, color 0.18s;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-icon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    /* Individual icon backgrounds */
+    .icon-blue {
+      background: #e8f4ff;
+      color: #3c99e7;
+    }
+
+    .icon-blue::before {
+      background: #3c99e7;
+    }
+
+    .icon-green {
+      background: #e7fae9;
+      color: #34ba7f;
+    }
+
+    .icon-green::before {
+      background: #34ba7f;
+    }
+
+    .icon-yellow {
+      background: #fff3e6;
+      color: #ffb650;
+    }
+
+    .icon-yellow::before {
+      background: #ffb650;
+    }
+
+    .icon-purple {
+      background: #f6f0fa;
+      color: #b078d8;
+    }
+
+    .icon-purple::before {
+      background: #b078d8;
+    }
+
+    .icon-teal {
+      background: #e8f7fa;
+      color: #19c1c1;
+    }
+
+    .icon-teal::before {
+      background: #19c1c1;
+    }
+
+    .icon-indigo {
+      background: #f0f3fa;
+      color: #5874b8;
+    }
+
+    .icon-indigo::before {
+      background: #5874b8;
+    }
+
+    /* SVG icons */
+    .feature-icon svg {
+      width: 34px;
+      height: 34px;
+      display: block;
+    }
+
+    .feature-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.5px;
+    }
+
+    .feature-desc {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-weight: 400;
+      min-height: 50px;
+    }
+
+    .feature-learn {
+      display: inline-flex;
+      align-items: center;
+      margin-top: auto;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
       border: none;
       outline: none;
+      background: none;
       cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      letter-spacing: 0.01em;
     }
-    .footer-social-icon:hover {
-      background: #fff;
-      color: #222;
+
+    .learn-blue {
+      background: #e8f4ff;
+      color: #3c99e7;
     }
-    @media (max-width: 1250px) {
-      .footer-content, .footer-bottom-row {
-        max-width: 98vw;
+
+    .learn-green {
+      background: #e7fae9;
+      color: #34ba7f;
+    }
+
+    .learn-yellow {
+      background: #fff3e6;
+      color: #ffb650;
+    }
+
+    .learn-purple {
+      background: #f6f0fa;
+      color: #b078d8;
+    }
+
+    .learn-teal {
+      background: #e8f7fa;
+      color: #19c1c1;
+    }
+
+    .learn-indigo {
+      background: #f0f3fa;
+      color: #5874b8;
+    }
+
+    .feature-learn:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .arrow-right {
+      font-size: 16px;
+      margin-left: 6px;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+
+    .feature-learn:hover .arrow-right {
+      transform: translateX(3px);
+    }
+
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .features-grid {
+        gap: 28px;
+        max-width: 900px;
       }
-      .footer-divider {
-        width: 99vw;
-      }
-      .footer-brand {
-        margin-left: 40px;
-      }
-      .footer-copyright {
-        margin-left: 40px;
+
+      .feature-card {
+        padding: 32px 24px 24px 24px;
       }
     }
+
     @media (max-width: 900px) {
-      .footer-content {
-        gap: 80px;
+      .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+        max-width: 95vw;
       }
-      .footer-divider {
-        margin-top: 22px;
+
+      .feature-card {
+        padding: 28px 20px 20px 20px;
+      }
+
+      .section-title {
+        font-size: 36px;
+      }
+
+      .section-desc {
+        font-size: 18px;
+      }
+
+      .feature-title {
+        font-size: 20px;
+      }
+
+      .feature-desc {
+        font-size: 15px;
+      }
+
+      .feature-learn {
+        font-size: 14px;
+        padding: 8px 16px;
       }
     }
+
     @media (max-width: 700px) {
-      .footer-content {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-        margin-left: 10px;
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
-      .footer-legal {
-        margin-top: 10px;
-        min-width: unset;
+
+      .feature-card {
+        width: 90%;
+        margin: 0 auto;
+        padding: 24px 20px 20px 20px;
       }
-      .footer-bottom-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
-        padding-top: 10px;
-      }
-      .footer-social {
-        margin-right: 0;
-      }
-      .footer-brand {
-        margin-left: 16px;
-      }
-      .footer-copyright {
-        margin-left: 16px;
+
+      .features-section {
+        padding: 80px 0;
       }
     }
+
     @media (max-width: 480px) {
-      .footer-brand-title { font-size: 16px; }
-      .footer-brand-desc { font-size: 10px; }
-      .footer-legal-title { font-size: 13px; }
-      .footer-legal-link { font-size: 11px; }
-      .footer-social-icon { width: 24px; height: 24px; font-size: 12px; }
-      .footer-copyright { font-size: 10px; }
-      .footer-logo-box { width: 20px; height: 20px; }
-      .footer-logo-box img { width: 12px; height: 12px; }
-      .footer-divider { width: 96vw; }
+      .section-title {
+        font-size: 28px;
+      }
+
+      .section-desc {
+        font-size: 16px;
+      }
+
+      .feature-title {
+        font-size: 18px;
+      }
+
+      .feature-desc {
+        font-size: 14px;
+      }
+
+      .feature-learn {
+        font-size: 13px;
+        padding: 7px 14px;
+      }
+
+      .feature-card {
+        width: 95%;
+        padding: 20px 16px 16px 16px;
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+      }
+
+      .features-section {
+        padding: 60px 0;
+      }
     }
   </style>
 </head>
 <body>
-  <footer class="footer-navbar">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <div class="footer-logo-row">
-          <div class="footer-logo-box">
-            <img src="icon.png" alt="Logo">
-          </div>
-          <span class="footer-brand-title">SpeechWave</span>
+  <section class="features-section">
+    <div class="features-badge">
+      <span class="features-badge-inner">★ FEATURES</span>
+    </div>
+    <h2 class="section-title">
+      Why Choose <span class="highlight">SpeechWave?</span>
+    </h2>
+    <div class="section-desc">
+      Discover the powerful features that make your content stand out from the crowd
+    </div>
+    <div class="features-grid">
+      <!-- Card 1 -->
+      <div class="feature-card">
+        <div class="feature-icon icon-blue">
+          <!-- User SVG -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="8" r="4" fill="currentColor" />
+            <path d="M4 19v-1a5 5 0 015-5h6a5 5 0 015 5v1" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" />
+          </svg>
         </div>
-        <div class="footer-brand-desc">
-          Transform your text into expressive,<br>
-          human-like speech with AI.
+        <div class="feature-title">Natural Voices</div>
+        <div class="feature-desc">Advanced AI creates expressive, human-like speech that captures emotion and nuance.
         </div>
+        <button class="feature-learn learn-blue">Learn More <span class="arrow-right">&#8594;</span></button>
       </div>
-      <div class="footer-legal">
-        <span class="footer-legal-title">Legal</span>
-        <a class="footer-legal-link" href="#">Privacy Policy</a>
+      <!-- Card 2 -->
+      <div class="feature-card">
+        <div class="feature-icon icon-green">
+          <!-- Globe SVG -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+            <path d="M12 3a9 9 0 000 18M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="feature-title">Multi-Language</div>
+        <div class="feature-desc">Support for multiple languages and accents to reach global audiences.</div>
+        <button class="feature-learn learn-green">Learn More <span class="arrow-right">&#8594;</span></button>
+      </div>
+      <!-- Card 3 -->
+      <div class="feature-card">
+        <div class="feature-icon icon-yellow">
+          <!-- Flash SVG -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 2v10h4v10l6-12h-4V2H7z" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="feature-title">Instant Generation</div>
+        <div class="feature-desc">Generate high-quality voiceovers in seconds, not hours.</div>
+        <button class="feature-learn learn-yellow">Learn More <span class="arrow-right">&#8594;</span></button>
+      </div>
+      <!-- Card 4 -->
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">
+          <!-- Control sliders SVG -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="5" y="3" width="2" height="18" rx="1" fill="currentColor" />
+            <rect x="11" y="8" width="2" height="13" rx="1" fill="currentColor" />
+            <rect x="17" y="14" width="2" height="7" rx="1" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="feature-title">Full Control</div>
+        <div class="feature-desc">Adjust pitch, speed, emotion, and style to match your content perfectly.</div>
+        <button class="feature-learn learn-purple">Learn More <span class="arrow-right">&#8594;</span></button>
+      </div>
+      <!-- Card 5 -->
+      <div class="feature-card">
+        <div class="feature-icon icon-teal">
+          <!-- Mobile SVG -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="6" y="3" width="12" height="18" rx="3" stroke="currentColor" stroke-width="2" />
+            <circle cx="12" cy="19" r="1" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="feature-title">Mobile Ready</div>
+        <div class="feature-desc">Easy-to-use Android app for creating voiceovers on the go.</div>
+        <button class="feature-learn learn-teal">Learn More <span class="arrow-right">&#8594;</span></button>
+      </div>
+      <!-- Card 6 -->
+      <div class="feature-card">
+        <div class="feature-icon icon-indigo">
+          <!-- Diamond SVG -->
+          <svg viewBox="0 0 24 24" fill="none">
+            <polygon points="12,3 21,9 17,21 7,21 3,9" stroke="currentColor" stroke-width="2" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="feature-title">Professional Quality</div>
+        <div class="feature-desc">Studio-quality output suitable for commercial use and professional projects.</div>
+        <button class="feature-learn learn-indigo">Learn More <span class="arrow-right">&#8594;</span></button>
       </div>
     </div>
-    <hr class="footer-divider">
-    <div class="footer-bottom-row">
-      <span class="footer-copyright">
-        © 2025 Omneuroai. All rights reserved.
-      </span>
-      <div class="footer-social">
-        <a class="footer-social-icon" href="#" title="Website">
-          <!-- Font Awesome browser icon -->
-          <i class="fa-solid fa-globe"></i>
-        </a>
-        <a class="footer-social-icon" href="#" title="Contact">
-          <!-- Font Awesome message icon -->
-          <i class="fa-regular fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
+  </section>
 </body>
 </html>

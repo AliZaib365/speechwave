@@ -418,88 +418,161 @@
       }
     }
 
-    .features-section {
+ .features-section {
       width: 100%;
-      padding: 60px 0 40px 0;
-      background: linear-gradient(180deg, #fafafa 0%, #fcfcfc 100%);
+      padding: 100px 0;
+      background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .features-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236a11cb' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      z-index: 0;
     }
 
     .features-badge {
       display: inline-block;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
     }
 
     .features-badge-inner {
       display: inline-block;
-      background: linear-gradient(90deg, #67b6f7 0%, #c687f6 100%);
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
       color: #fff;
-      font-size: 15px;
-      font-weight: 500;
-      padding: 6px 26px;
-      border-radius: 18px;
-      letter-spacing: 0.03em;
-      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 24px;
+      border-radius: 50px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(106, 17, 203, 0.2);
       text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .features-badge-inner::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .features-badge:hover .features-badge-inner::after {
+      left: 100%;
     }
 
     .section-title {
-      font-size: 42px;
-      font-weight: 700;
-      color: #222;
-      margin: 0 0 18px 0;
-      letter-spacing: -1.2px;
+      font-size: 48px;
+      font-weight: 800;
+      color: #1a1a1a;
+      margin: 0 0 20px 0;
+      letter-spacing: -1.5px;
+      position: relative;
+      z-index: 1;
     }
 
     .section-title .highlight {
-      color: #222;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .section-desc {
-      font-size: 18px;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto 40px auto;
-      line-height: 1.5;
+      font-size: 20px;
+      color: #6b7280;
+      max-width: 700px;
+      margin: 0 auto 60px auto;
+      line-height: 1.6;
       font-weight: 400;
+      position: relative;
+      z-index: 1;
     }
 
     .features-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 36px;
-      max-width: 1160px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
       margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
     }
 
     .feature-card {
       background: #fff;
-      border-radius: 24px;
-      box-shadow: 0 2px 18px 0 rgba(102, 119, 136, 0.08);
-      width: 340px;
-      min-height: 260px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 38px 32px 32px 32px;
+      align-items: flex-start;
+      padding: 40px 30px 30px 30px;
       box-sizing: border-box;
       position: relative;
-      transition: box-shadow 0.18s;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
     .feature-card:hover {
-      box-shadow: 0 4px 28px 0 rgba(102, 119, 136, 0.14);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .feature-card:hover::before {
+      transform: scaleX(1);
     }
 
     .feature-icon {
-      width: 54px;
-      height: 54px;
-      border-radius: 14px;
+      width: 70px;
+      height: 70px;
+      border-radius: 18px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-icon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+      opacity: 0.1;
+      z-index: -1;
     }
 
     /* Individual icon backgrounds */
@@ -508,9 +581,17 @@
       color: #3c99e7;
     }
 
+    .icon-blue::before {
+      background: #3c99e7;
+    }
+
     .icon-green {
       background: #e7fae9;
       color: #34ba7f;
+    }
+
+    .icon-green::before {
+      background: #34ba7f;
     }
 
     .icon-yellow {
@@ -518,9 +599,17 @@
       color: #ffb650;
     }
 
+    .icon-yellow::before {
+      background: #ffb650;
+    }
+
     .icon-purple {
       background: #f6f0fa;
       color: #b078d8;
+    }
+
+    .icon-purple::before {
+      background: #b078d8;
     }
 
     .icon-teal {
@@ -528,9 +617,17 @@
       color: #19c1c1;
     }
 
+    .icon-teal::before {
+      background: #19c1c1;
+    }
+
     .icon-indigo {
       background: #f0f3fa;
       color: #5874b8;
+    }
+
+    .icon-indigo::before {
+      background: #5874b8;
     }
 
     /* SVG icons */
@@ -541,25 +638,26 @@
     }
 
     .feature-title {
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 700;
-      color: #222;
-      margin: 0 0 7px 0;
+      color: #1a1a1a;
+      margin: 0 0 12px 0;
       letter-spacing: -0.5px;
     }
 
     .feature-desc {
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 15px;
-      line-height: 1.4;
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 20px;
+      line-height: 1.6;
       font-weight: 400;
-      min-height: 42px;
+      min-height: 50px;
     }
 
     .feature-learn {
-      display: inline-block;
-      margin-top: 6px;
+      display: inline-flex;
+      align-items: center;
+      margin-top: auto;
       font-size: 15px;
       font-weight: 600;
       text-decoration: none;
@@ -567,12 +665,11 @@
       outline: none;
       background: none;
       cursor: pointer;
-      padding: 7px 19px;
-      border-radius: 22px;
-      transition: background 0.15s;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       letter-spacing: 0.01em;
-      vertical-align: middle;
     }
 
     .learn-blue {
@@ -606,16 +703,19 @@
     }
 
     .feature-learn:hover {
-      filter: brightness(0.97);
-      background: #e9e9e9;
-      color: #222;
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .arrow-right {
       font-size: 16px;
-      margin-left: 4px;
-      vertical-align: text-bottom;
+      margin-left: 6px;
       font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+
+    .feature-learn:hover .arrow-right {
+      transform: translateX(3px);
     }
 
     /* Responsive */
@@ -626,86 +726,95 @@
       }
 
       .feature-card {
-        width: 300px;
-        min-height: 220px;
-        padding: 28px 18px 24px 18px;
+        padding: 32px 24px 24px 24px;
       }
     }
 
     @media (max-width: 900px) {
       .features-grid {
-        gap: 18px;
-        max-width: 99vw;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+        max-width: 95vw;
       }
 
       .feature-card {
-        width: 220px;
-        min-height: 180px;
-        padding: 18px 8px 16px 8px;
+        padding: 28px 20px 20px 20px;
       }
 
       .section-title {
-        font-size: 32px;
+        font-size: 36px;
       }
 
       .section-desc {
-        font-size: 15px;
+        font-size: 18px;
       }
 
       .feature-title {
-        font-size: 16px;
+        font-size: 20px;
       }
 
       .feature-desc {
-        font-size: 12px;
+        font-size: 15px;
       }
 
       .feature-learn {
-        font-size: 12px;
-        padding: 5px 12px;
+        font-size: 14px;
+        padding: 8px 16px;
       }
     }
 
     @media (max-width: 700px) {
       .features-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
 
       .feature-card {
         width: 90%;
-        min-height: 120px;
-        padding: 12px 4vw 12px 4vw;
+        margin: 0 auto;
+        padding: 24px 20px 20px 20px;
+      }
+
+      .features-section {
+        padding: 80px 0;
       }
     }
 
-    @media (max-width: 440px) {
+    @media (max-width: 480px) {
       .section-title {
-        font-size: 24px;
+        font-size: 28px;
       }
 
       .section-desc {
-        font-size: 12px;
+        font-size: 16px;
       }
 
       .feature-title {
-        font-size: 15px;
+        font-size: 18px;
       }
 
       .feature-desc {
-        font-size: 11px;
+        font-size: 14px;
       }
 
       .feature-learn {
-        font-size: 11px;
-        padding: 4px 10px;
+        font-size: 13px;
+        padding: 7px 14px;
       }
 
       .feature-card {
         width: 95%;
-        padding: 10px 3vw 10px 3vw;
-        min-height: 100px;
+        padding: 20px 16px 16px 16px;
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+      }
+
+      .features-section {
+        padding: 60px 0;
       }
     }
 
@@ -996,7 +1105,7 @@
       Trusted by content creators worldwide
     </div>
   </section>
-  <section class="features-section">
+   <section class="features-section">
     <div class="features-badge">
       <span class="features-badge-inner">★ FEATURES</span>
     </div>
@@ -1004,7 +1113,7 @@
       Why Choose <span class="highlight">SpeechWave?</span>
     </h2>
     <div class="section-desc">
-      Discover the powerful features that make your content stand out<br>from the crowd
+      Discover the powerful features that make your content stand out from the crowd
     </div>
     <div class="features-grid">
       <!-- Card 1 -->
