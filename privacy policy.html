@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'sans-serif', Arial, Helvetica;
+      background: #f7f7f7;
+      color: #222;
+      min-height: 100vh;
+    }
+    .privacy-header {
+      width: 100vw;
+      background: linear-gradient(180deg, #e8f4ff 0%, #f7f7f7 100%);
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+    .privacy-header-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #d5eafd;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
+    }
+    .privacy-header-icon i {
+      font-size: 32px;
+      color: #3c99e7;
+    }
+    .privacy-header-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: 0.01em;
+    }
+    .privacy-main {
+      max-width: 900px; /* Increased from 580px */
+      margin: 0 auto;
+      padding: 50px 40px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    .privacy-section {
+      margin-bottom: 40px;
+    }
+    .privacy-section:last-child {
+      margin-bottom: 0;
+    }
+    .privacy-section-title {
+      display: flex;
+      align-items: center;
+      font-size: 22px; /* Increased from 17px */
+      font-weight: 700;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+    .privacy-section-title .privacy-icon {
+      width: 34px; /* Increased from 26px */
+      height: 34px; /* Increased from 26px */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px; /* Increased from 14px */
+      margin-right: 15px; /* Increased from 12px */
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .privacy-icon.intro     { background: #3c99e7; }
+    .privacy-icon.collect   { background: #6dd67a; }
+    .privacy-icon.use       { background: #feb24e; }
+    .privacy-icon.share     { background: #b078d8; }
+    .privacy-icon.retain    { background: #1ccfcf; }
+    .privacy-icon.security  { background: #3c99e7; }
+    .privacy-icon.child     { background: #ffb650; }
+    .privacy-icon.third     { background: #8fbcff; }
+    .privacy-icon.change    { background: #8fbcff; }
+    .privacy-icon.contact   { background: #232323; }
+    .privacy-section-content {
+      font-size: 18px; /* Increased from 15px */
+      color: #222;
+      margin-left: 49px; /* Increased from 38px */
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.7;
+    }
+    .privacy-section-content ul,
+    .privacy-section-content ol {
+      margin-top: 10px; /* Increased from 8px */
+      margin-bottom: 10px; /* Increased from 8px */
+      margin-left: 25px; /* Increased from 20px */
+      padding-left: 0;
+    }
+    .privacy-section-content li {
+      font-size: 17px; /* Increased from 14px */
+      line-height: 1.6;
+      margin-bottom: 8px; /* Increased from 6px */
+    }
+    .privacy-section-content ul ul {
+      margin-top: 8px; /* Increased from 6px */
+      margin-bottom: 8px; /* Increased from 6px */
+      margin-left: 22px; /* Increased from 18px */
+    }
+    .privacy-section-content ul ul li {
+      font-size: 16px; /* Increased from 13.5px */
+      margin-bottom: 6px; /* Increased from 4px */
+    }
+    .privacy-section-content b {
+      color: #333;
+    }
+    /* Responsive */
+    @media (max-width:900px) {
+      .privacy-main {
+        max-width: 92vw;
+        padding: 35px 30px;
+        margin-top: 25px;
+        margin-bottom: 40px;
+      }
+      .privacy-header {
+        padding: 40px 15px 20px;
+      }
+      .privacy-header-title { 
+        font-size: 28px; 
+      }
+      .privacy-header-icon { 
+        width: 60px; 
+        height: 60px; 
+      }
+      .privacy-header-icon i { 
+        font-size: 26px; 
+      }
+      .privacy-section-title { 
+        font-size: 20px; 
+      }
+      .privacy-section-content { 
+        font-size: 17px; 
+        margin-left: 0; 
+      }
+      .privacy-section-content li { 
+        font-size: 16px; 
+      }
+      .privacy-section-content ul ul li { 
+        font-size: 15px; 
+      }
+    }
+    @media (max-width:600px) {
+      .privacy-main {
+        max-width: 94vw;
+        padding: 30px 25px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+      }
+      .privacy-header {
+        padding: 30px 15px 15px;
+      }
+      .privacy-header-title { 
+        font-size: 24px; 
+      }
+      .privacy-header-icon { 
+        width: 50px; 
+        height: 50px; 
+      }
+      .privacy-header-icon i { 
+        font-size: 22px; 
+      }
+      .privacy-section-title { 
+        font-size: 18px; 
+      }
+      .privacy-section-content { 
+        font-size: 16px; 
+        margin-left: 0; 
+      }
+      .privacy-section-content li { 
+        font-size: 15px; 
+      }
+      .privacy-section-content ul ul li { 
+        font-size: 14px; 
+      }
+    }
+    @media (max-width:400px) {
+      .privacy-header-icon { 
+        width: 44px; 
+        height: 44px; 
+      }
+      .privacy-header-icon i { 
+        font-size: 20px; 
+      }
+      .privacy-section-title .privacy-icon { 
+        width: 28px; 
+        height: 28px; 
+        font-size: 14px; 
+        margin-right: 10px; 
+      }
+      .privacy-main {
+        padding: 25px 20px;
+      }
+    }
+    .back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  color: #3c99e7;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.back-button i {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+/* Ensure it looks good on small screens */
+@media (max-width:600px) {
+  .back-button {
+    top: 15px;
+    left: 15px;
+    font-size: 15px;
+  }
+
+  .back-button i {
+    font-size: 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="privacy-header">
+    <a href="index.html" class="back-button" aria-label="Go back to home">
+  <i class="fa-solid fa-arrow-left"></i> Back
+</a>
+
+    <div class="privacy-header-icon">
+      <i class="fa-solid fa-shield-halved"></i>
+    </div>
+    <h1 class="privacy-header-title">Privacy Policy</h1>
+  </div>
+  <main class="privacy-main">
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon intro"><i class="fa-solid fa-info"></i></span> Introduction</h3>
+      <div class="privacy-section-content">
+        Omneuroai ("we", "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your information when you use our app.<br><br>
+        By using the app, you agree to be governed by this Privacy Policy. If you do not agree, please discontinue use of our app.
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon collect"><i class="fa-solid fa-database"></i></span> 1. Information We Collect</h3>
+      <div class="privacy-section-content">
+        We may collect the following types of information:<br>
+        <ul>
+          <li><b>Account Information:</b></li>
+          <ul>
+            <li>Name and email address (e.g. Google Sign-In/Password, or other supported methods).</li>
+            <li>App usage and in-app purchase events.</li>
+            <li>Usage data for troubleshooting issues.</li>
+          </ul>
+          <li><b>Device Information:</b></li>
+          <ul>
+            <li>Device type/model & version.</li>
+            <li>OS (Android/iOS) & version.</li>
+          </ul>
+          <li><b>Content:</b></li>
+          <ul>
+            <li>Text input for text-to-speech conversion (processed only for generating speech and not stored after use).</li>
+          </ul>
+          <li><b>Automatically Collected Data:</b></li>
+          <ul>
+            <li>General app usage information, device events (e.g. battery level, language, and country).</li>
+            <li>Analytics info (e.g. session length, frequency of use).</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon use"><i class="fa-solid fa-gear"></i></span> 2. How We Use Your Information</h3>
+      <div class="privacy-section-content">
+        We use the collected information for the following purposes:<br>
+        <ul>
+          <li>To provide and personalize app features and services.</li>
+          <li>To troubleshoot and improve the app.</li>
+          <li>To communicate with you about your account.</li>
+          <li>To process purchases and transactions.</li>
+          <li>To analyze performance & usage for improvements.</li>
+          <li>To enhance app security (e.g. prevent abuse, unauthorized access).</li>
+        </ul>
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon share"><i class="fa-solid fa-share-nodes"></i></span> 3. Data Sharing and Disclosure</h3>
+      <div class="privacy-section-content">
+        We do not sell your personal data. However, we may share information in the following cases:
+        <ul>
+          <li>With Service Providers (for authentication, cloud storage, analytics, and crash reporting).</li>
+          <li>For legal compliance (if required by law or to protect users and the safety of users).</li>
+        </ul>
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon retain"><i class="fa-solid fa-box-archive"></i></span> 4. Data Retention</h3>
+      <div class="privacy-section-content">
+        <ul>
+          <li>Account information is retained as long as your account is active.</li>
+          <li>Personal data (used for your account and in-app events) is stored only as needed for app functionality and legal purposes. Some data may be stored permanently, others removed upon account deletion or as required by law (see Section 5).</li>
+        </ul>
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon security"><i class="fa-solid fa-lock"></i></span> 5. Security</h3>
+      <div class="privacy-section-content">
+        We take industry standard security measures to protect your data, including encryption and secure authentication. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon child"><i class="fa-solid fa-child"></i></span> 6. Children's Privacy</h3>
+      <div class="privacy-section-content">
+        Our app is not intended for children under the age of 13. We do not knowingly collect personal data from children. If you believe we have collected data from a child, please contact us and we will take steps to remove the data.
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon third"><i class="fa-solid fa-plug"></i></span> 7. Third-Party Services</h3>
+      <div class="privacy-section-content">
+        Our app may interact with services such as:
+        <ul>
+          <li>Google Sign-In (for authentication)</li>
+          <li>Firebase Analytics & Crashlytics (used for crash and events reports)</li>
+        </ul>
+        These services may collect information as described in their own privacy policies.
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon change"><i class="fa-solid fa-arrows-rotate"></i></span> 8. Changes to This Privacy Policy</h3>
+      <div class="privacy-section-content">
+        We may change this Privacy Policy from time to time. Updates will be posted here. We recommend reviewing this page periodically for changes. Continued use of the app after changes means you accept the updated policy.
+      </div>
+    </section>
+    <section class="privacy-section">
+      <h3 class="privacy-section-title"><span class="privacy-icon contact"><i class="fa-regular fa-envelope"></i></span> 9. Contact Us</h3>
+      <div class="privacy-section-content">
+        If you have questions or requests regarding this Privacy Policy, you can contact us at <b>support@omneuroai.com</b>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

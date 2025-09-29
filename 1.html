@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SpeechWave Footer Navbar Exact Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome SVG CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'sans-serif', Arial, Helvetica;
+      background: #0a0a0a;
+      color: #fff;
+    }
+    .footer-navbar {
+      width: 100vw;
+      background: #0a0a0a;
+      padding-top: 36px;
+      box-sizing: border-box;
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 180px;
+    }
+    .footer-brand {
+      margin-left: 400px;
+      min-width: 320px;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-logo-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .footer-logo-box {
+      background: #fff;
+      border-radius: 7px;
+      width: 27px;
+      height: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 14px;
+      overflow: hidden;
+    }
+    .footer-logo-box img {
+      width: 17px;
+      height: 17px;
+      display: block;
+    }
+    .footer-brand-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+    .footer-brand-desc {
+      font-size: 15px;
+      color: #e2e2e2;
+      margin-top: 0;
+      line-height: 1.3;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    .footer-legal {
+      min-width: 180px;
+      margin-top: 14px;
+    }
+    .footer-legal-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      color: #fff;
+      letter-spacing: 0.01em;
+    }
+    .footer-legal-link {
+      font-size: 15px;
+      color: #e2e2e2;
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.16s;
+      display: inline-block;
+      letter-spacing: 0.01em;
+    }
+    .footer-legal-link:hover {
+      color: #fff;
+    }
+    .footer-divider {
+      width: 1150px;
+      max-width: 90vw;
+      height: 1px;
+      background: #232323;
+      margin: 38px auto 0 auto;
+      border: none;
+      display: block;
+    }
+    .footer-bottom-row {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding-top: 16px;
+    }
+    .footer-copyright {
+      color: #b7b7b7;
+      font-size: 15px;
+      margin-left: 400px;
+      letter-spacing: 0.01em;
+    }
+    .footer-social {
+      display: flex;
+      gap: 14px;
+      margin-right: 20px;
+    }
+    .footer-social-icon {
+      background: #555;
+      border-radius: 7px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 17px;
+      transition: background 0.18s, color 0.18s;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .footer-social-icon:hover {
+      background: #fff;
+      color: #222;
+    }
+    @media (max-width: 1250px) {
+      .footer-content, .footer-bottom-row {
+        max-width: 98vw;
+      }
+      .footer-divider {
+        width: 99vw;
+      }
+      .footer-brand {
+        margin-left: 40px;
+      }
+      .footer-copyright {
+        margin-left: 40px;
+      }
+    }
+    @media (max-width: 900px) {
+      .footer-content {
+        gap: 80px;
+      }
+      .footer-divider {
+        margin-top: 22px;
+      }
+    }
+    @media (max-width: 700px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        margin-left: 10px;
+      }
+      .footer-legal {
+        margin-top: 10px;
+        min-width: unset;
+      }
+      .footer-bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding-top: 10px;
+      }
+      .footer-social {
+        margin-right: 0;
+      }
+      .footer-brand {
+        margin-left: 16px;
+      }
+      .footer-copyright {
+        margin-left: 16px;
+      }
+    }
+    @media (max-width: 480px) {
+      .footer-brand-title { font-size: 16px; }
+      .footer-brand-desc { font-size: 10px; }
+      .footer-legal-title { font-size: 13px; }
+      .footer-legal-link { font-size: 11px; }
+      .footer-social-icon { width: 24px; height: 24px; font-size: 12px; }
+      .footer-copyright { font-size: 10px; }
+      .footer-logo-box { width: 20px; height: 20px; }
+      .footer-logo-box img { width: 12px; height: 12px; }
+      .footer-divider { width: 96vw; }
+    }
+  </style>
+</head>
+<body>
+  <footer class="footer-navbar">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="footer-logo-box">
+            <img src="icon.png" alt="Logo">
+          </div>
+          <span class="footer-brand-title">SpeechWave</span>
+        </div>
+        <div class="footer-brand-desc">
+          Transform your text into expressive,<br>
+          human-like speech with AI.
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span class="footer-legal-title">Legal</span>
+        <a class="footer-legal-link" href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom-row">
+      <span class="footer-copyright">
+        © 2025 Omneuroai. All rights reserved.
+      </span>
+      <div class="footer-social">
+        <a class="footer-social-icon" href="#" title="Website">
+          <!-- Font Awesome browser icon -->
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a class="footer-social-icon" href="#" title="Contact">
+          <!-- Font Awesome message icon -->
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | SpeechWave</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #222;
+            --primary-light: #f0f0f0;
+            --primary-dark: #000;
+            --button-color: #222;
+            --button-hover: #000;
+            --text-color: #222;
+            --background-color: #f7f7f7;
+            --white: #fff;
+            --shadow: rgba(0, 0, 0, 0.04);
+            --success-color: #222;
+            --success-bg: #f0f0f0;
+            --error-color: #222;
+            --error-bg: #f0f0f0;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+.navbar {
+      width: 100%;
+      padding: 18px 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      margin-left: 400px;
+    }
+
+    .logo-box {
+      background: #000;
+      border-radius: 8px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      overflow: hidden;
+    }
+
+    .logo-box img {
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+
+    .brand {
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .brand-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .brand-desc {
+      font-size: 14px;
+      color: #888;
+      margin-top: -2px;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      margin-right: 400px;
+    }
+
+    .navbar-link {
+      font-size: 15px;
+      color: #444;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .navbar-link:hover {
+      color: #000;
+    }
+
+    .download-btn {
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 10px 26px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      transition: background 0.2s;
+    }
+
+    .download-btn:hover {
+      background: #222;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+      .navbar-left {
+        margin-left: 40px;
+      }
+
+      .navbar-right {
+        margin-right: 40px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .navbar {
+        padding: 14px 0;
+      }
+
+      .navbar-left {
+        margin-left: 20px;
+      }
+
+      .navbar-right {
+        margin-right: 20px;
+        gap: 20px;
+      }
+
+      .brand-title {
+        font-size: 20px;
+      }
+
+      .brand-desc {
+        font-size: 12px;
+      }
+
+      .navbar-link,
+      .download-btn {
+        font-size: 13px;
+      }
+
+      .logo-box {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+      }
+
+      .logo-box img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+      }
+
+      .navbar-left {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      .navbar-right {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+        width: calc(100% - 40px);
+        justify-content: space-between;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .navbar {
+        padding: 7px 0;
+      }
+
+      .navbar-left {
+        margin-left: 15px;
+      }
+
+      .navbar-right {
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 15px;
+        width: calc(100% - 30px);
+      }
+
+      .brand-title {
+        font-size: 18px;
+      }
+
+      .brand-desc {
+        font-size: 11px;
+      }
+
+      .navbar-link,
+      .download-btn {
+        font-size: 12px;
+        padding: 8px 16px;
+      }
+
+      .logo-box {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+      }
+
+      .logo-box img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .navbar-right {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      .navbar-link {
+        margin-right: 15px;
+      }
+
+      .download-btn {
+        margin-top: 5px;
+      }
+    }
+        .contact-container {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-header {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--background-color) 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            margin-bottom: 30px;
+            animation: fadeIn 0.8s ease-out;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-header-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            animation: bounceIn 0.8s ease-out;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header-icon i {
+            font-size: 32px;
+            color: var(--primary-color);
+        }
+
+        .contact-header-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0;
+            margin-top: 10px;
+            letter-spacing: 0.01em;
+            color: var(--primary-color);
+        }
+
+        .contact-header-subtitle {
+            font-size: 16px;
+            color: #666;
+            max-width: 600px;
+            margin: 10px auto 0;
+            font-weight: 400;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        .contact-main {
+            flex: 2;
+            min-width: 300px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            animation: slideInRight 0.6s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary-color);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .info-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .info-icon i {
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .info-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .info-content p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .contact-form-label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: block;
+            margin-top: 18px;
+            color: var(--text-color);
+            letter-spacing: 0.01em;
+            transition: var(--transition);
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .contact-form-input,
+        .contact-form-textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 14px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: var(--background-color);
+            color: var(--text-color);
+            font-family: inherit;
+            box-sizing: border-box;
+            transition: var(--transition);
+        }
+
+        .contact-form-input:focus,
+        .contact-form-textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: var(--button-color);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 600;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            margin-top: 16px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-form-btn:hover {
+            background: var(--button-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form-btn:active {
+            transform: translateY(0);
+        }
+
+        .contact-form-btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%);
+            transform-origin: 50% 50%;
+        }
+
+        .contact-form-btn:focus:not(:active)::after {
+            animation: ripple 1s ease-out;
+        }
+
+        .contact-form-btn i {
+            font-size: 16px;
+            margin-right: 2px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-form-btn:hover i {
+            transform: translateX(3px);
+        }
+
+        .contact-success {
+            background: var(--success-bg);
+            color: var(--success-color);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 18px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+            display: none;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .contact-error {
+            background: var(--error-bg);
+            color: var(--error-color);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 18px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+            display: none;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .input-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary-color);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-form-input:focus+.input-icon,
+        .contact-form-textarea:focus+.input-icon {
+            opacity: 1;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+
+            70% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(20, 20);
+                opacity: 0;
+            }
+        }
+
+        /* Floating label effect */
+        .floating-label {
+            position: relative;
+        }
+
+        .floating-label label {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            font-size: 14px;
+            color: #888;
+            pointer-events: none;
+            transition: var(--transition);
+            background: transparent;
+            padding: 0 5px;
+        }
+
+        .floating-label textarea+label {
+            top: 20px;
+            transform: none;
+        }
+
+        .floating-label input:focus+label,
+        .floating-label input:not(:placeholder-shown)+label,
+        .floating-label textarea:focus+label,
+        .floating-label textarea:not(:placeholder-shown)+label {
+            top: 0;
+            left: 10px;
+            font-size: 12px;
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-header {
+                padding: 30px 15px;
+            }
+
+            .contact-header-icon {
+                width: 70px;
+                height: 70px;
+            }
+
+            .contact-header-icon i {
+                font-size: 28px;
+            }
+
+            .contact-header-title {
+                font-size: 28px;
+            }
+
+            .contact-content {
+                flex-direction: column;
+            }
+
+            .contact-info,
+            .contact-main {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-header {
+                padding: 20px 10px;
+            }
+
+            .contact-header-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .contact-header-icon i {
+                font-size: 24px;
+            }
+
+            .contact-header-title {
+                font-size: 24px;
+            }
+
+            .contact-header-subtitle {
+                font-size: 14px;
+            }
+
+            .contact-info,
+            .contact-main {
+                padding: 20px;
+            }
+
+            .info-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-icon {
+                margin-bottom: 10px;
+            }
+        }
+        
+    .footer {
+      width: 100%;
+      background: #0a0a0a;
+      padding-top: 40px;
+      padding-bottom: 0;
+      box-sizing: border-box;
+      margin-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      width: 100%;
+      max-width: 1440px;
+      justify-content: space-around;
+      gap: 160px;
+      margin: 0 auto 32px auto;
+      min-height: 110px;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      min-width: 340px;
+      max-width: 380px;
+    }
+
+    .footer-logo-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .footer-logo-box {
+      background: #111;
+      border-radius: 8px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 14px;
+    }
+
+    .footer-logo-box svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    .footer-brand-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+
+    .footer-brand-desc {
+      font-size: 15px;
+      color: #e2e2e2;
+      margin-top: 7px;
+      line-height: 1.3;
+      font-weight: 400;
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      min-width: 180px;
+    }
+
+    .footer-legal-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .footer-legal-link {
+      font-size: 15px;
+      color: #e2e2e2;
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.16s;
+    }
+
+    .footer-legal-link:hover {
+      color: #fff;
+    }
+
+    .footer-divider {
+      width: 100vw;
+      max-width: 1440px;
+      height: 1px;
+      background: #232323;
+      margin: 0 auto 20px auto;
+      border: none;
+    }
+
+    .footer-bottom-row {
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+
+    .footer-copyright {
+      color: #b7b7b7;
+      font-size: 16px;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 14px;
+      margin-right: 16px;
+    }
+
+    .footer-social-icon {
+      background: #232323;
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #b7b7b7;
+      font-size: 18px;
+      transition: background 0.18s, color 0.18s;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .footer-social-icon:hover {
+      background: #fff;
+      color: #222;
+    }
+
+    @media (max-width: 1200px) {
+
+      .footer-content,
+      .footer-bottom-row {
+        margin-left: 32px;
+        margin-right: 32px;
+        max-width: 98vw;
+      }
+
+      .footer-brand {
+        margin-left: 0;
+      }
+
+      .footer-copyright {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .footer-content {
+        gap: 60px;
+      }
+
+      .footer-bottom-row {
+        padding-bottom: 18px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        margin-left: 20px;
+      }
+
+      .footer-legal {
+        margin-top: 12px;
+      }
+
+      .footer-bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding-bottom: 12px;
+        margin-left: 20px;
+      }
+
+      .footer-social {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-brand-title {
+        font-size: 18px;
+      }
+
+      .footer-brand-desc {
+        font-size: 12px;
+      }
+
+      .footer-legal-title {
+        font-size: 16px;
+      }
+
+      .footer-legal-link {
+        font-size: 12px;
+      }
+
+      .footer-social-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+      }
+
+      .footer-content {
+        gap: 15px;
+      }
+
+      .footer-copyright {
+        font-size: 12px;
+      }
+    }
+    </style>
+</head>
+
+<body>
+      <nav class="navbar">
+    <div class="navbar-left">
+      <div class="logo-box">
+        <a href="index.html"><img  src="icon.png" alt="Logo"></a>
+      </div>
+      <div class="brand">
+        <span class="brand-title">SpeechWave</span>
+        <span class="brand-desc">Expressive AI Text to Speech</span>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <a class="navbar-link" href="privacy policy.html">Privacy Policy</a>
+      <a class="navbar-link" href="contact-us.html">Contact</a>
+      <a class="download-btn" href="download.html">Download now</a>
+    </div>
+  </nav>
+    <div class="contact-container">
+        <div class="contact-header">
+            <div class="contact-header-icon">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <h1 class="contact-header-title">Contact Us</h1>
+            <p class="contact-header-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon
+                as possible.</p>
+        </div>
+
+        <div class="contact-content">
+            
+
+            <main class="contact-main">
+                <form id="contactForm" autocomplete="off" onsubmit="return false;">
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" class="contact-form-input" required autocomplete="name"
+                            placeholder=" ">
+                        <label for="name">Full Name</label>
+                        <i class="fas fa-user input-icon"></i>
+                    </div>
+
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" class="contact-form-input" required
+                            autocomplete="email" placeholder=" ">
+                        <label for="email">Email Address</label>
+                        <i class="fas fa-envelope input-icon"></i>
+                    </div>
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" class="contact-form-textarea" required
+                            placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                        <i class="fas fa-comment input-icon"></i>
+                    </div>
+
+                    <button type="submit" class="contact-form-btn">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                    <div class="contact-success" id="contactSuccess">Your message has been sent successfully. We'll get
+                        back to you soon!</div>
+                    <div class="contact-error" id="contactError">There was an error sending your message. Please try
+                        again.</div>
+                </form>
+            </main>
+        </div>
+    </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="footer-logo-box">
+            <!-- Wave SVG icon -->
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M4 16h2m2 0h2m2 0v-6m2 6v-10m2 10v-7m2 7v-4m2 4h2m2 0h2" stroke="#fff" stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <span class="footer-brand-title">SpeechWave</span>
+        </div>
+        <div class="footer-brand-desc">
+          Transform your text into expressive,<br>
+          human-like speech with AI.
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span class="footer-legal-title">Legal</span>
+        <a class="footer-legal-link" href="privacy policy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom-row">
+      <span class="footer-copyright">
+        © 2025 Omneuroai. All rights reserved.
+      </span>
+      <div class="footer-social">
+        <a class="footer-social-icon" href="#" title="Website">
+          <!-- Font Awesome browser icon -->
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a class="footer-social-icon" href="#" title="Contact">
+          <!-- Font Awesome message icon -->
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').onsubmit = function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if (!name || !email || !message) {
+                showError('Please fill in all required fields.');
+                return false;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showError('Please enter a valid email address.');
+                return false;
+            }
+
+            // Simulate form submission (replace with actual AJAX call)
+            const submitBtn = document.querySelector('.contact-form-btn');
+            const originalText = submitBtn.innerHTML;
+
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                // Randomly determine success or failure for demo purposes
+                const isSuccess = Math.random() > 0.2;
+
+                if (isSuccess) {
+                    showSuccess();
+                    document.getElementById('contactForm').reset();
+                    resetFloatingLabels();
+                } else {
+                    showError('There was a problem sending your message. Please try again.');
+                }
+
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+
+            return false;
+        };
+
+        function showSuccess() {
+            const successEl = document.getElementById('contactSuccess');
+            const errorEl = document.getElementById('contactError');
+
+            errorEl.style.display = 'none';
+            successEl.style.display = 'block';
+
+            setTimeout(() => {
+                successEl.style.display = 'none';
+            }, 5000);
+        }
+
+        function showError(message) {
+            const successEl = document.getElementById('contactSuccess');
+            const errorEl = document.getElementById('contactError');
+
+            successEl.style.display = 'none';
+            errorEl.textContent = message;
+            errorEl.style.display = 'block';
+
+            setTimeout(() => {
+                errorEl.style.display = 'none';
+            }, 5000);
+        }
+
+        // Add floating label functionality
+        document.querySelectorAll('.floating-label input, .floating-label textarea').forEach(input => {
+            // Check if input has content on page load
+            if (input.value) {
+                input.parentElement.classList.add('has-content');
+            }
+
+            input.addEventListener('input', function () {
+                if (this.value) {
+                    this.parentElement.classList.add('has-content');
+                } else {
+                    this.parentElement.classList.remove('has-content');
+                }
+            });
+        });
+
+        function resetFloatingLabels() {
+            document.querySelectorAll('.floating-label input, .floating-label textarea').forEach(input => {
+                input.parentElement.classList.remove('has-content');
+            });
+        }
+    </script>
+</body>
+
+</html>
